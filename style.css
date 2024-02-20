@@ -1,0 +1,106 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+
+  
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.clock{
+  background-color: rgb(49,47,47);
+  width: 300px;
+  height: 300px;
+  border-radius:50% ;
+  color:#FFF;
+  border:5px solid white;
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.7);
+  font-size: 26px;
+  font-weight: bold;
+  z-index: 9;
+
+
+  position: relative;
+
+}
+.clock::after{
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 15px;
+  background-color:black ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+
+}
+.clock ul li{
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  transform: rotate(var(--rotate));
+  inset: 5px;
+
+}
+.clock ul li span{
+  transform: rotate(calc(-30deg *var(--i)));
+  display: inline-block;
+}
+#num1{--rotate:30deg;}
+#num2{--rotate:60deg;}
+#num3{--rotate:90deg;}
+#num4{--rotate:120deg;}
+#num5{--rotate:150deg;}
+#num6{--rotate:180deg;}
+#num7{--rotate:210deg;}
+#num8{--rotate:240deg;}
+#num9{--rotate:270deg;}
+#num10{--rotate:300deg;}
+#num11{--rotate:330deg;}
+.needles{
+  --rotate:0;
+
+  
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: bottom;
+  transform: translateX(-50%) rotate(calc(var(--rotate)*1deg));
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+  z-index: 11;
+
+}
+.needles.hour{
+  width: 10px;
+  height: 33%;
+  background-color: black;
+}
+.needles.seconds{
+  width: 5px;
+  height: 30%;
+  background-color: red;
+}
+.needles.minute{
+  width: 5px;
+  height: 40%;
+  background-color: white;
+}
+.loader{
+  background-color: bisque;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+
+}
