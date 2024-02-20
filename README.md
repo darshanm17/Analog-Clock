@@ -1,0 +1,1 @@
+The analog clock created with HTML, CSS, and JavaScript features a circular clock face with hour, minute, and optionally, second hands. JavaScript dynamically updates the hand positions based on the current time, while CSS enhances the visual appeal.
