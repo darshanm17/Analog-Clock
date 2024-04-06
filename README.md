@@ -17,9 +17,9 @@ To get a copy of this project up and running on your local machine, follow these
    ```bash
    git clone https://github.com/darshanm17/Analog-Clock.git
 1) Open the index.html file in your web browser.
-Usage
+## Usage
 Upon opening index.html in a web browser, the analog clock will be displayed.
 The clock hands will move dynamically to show the current time.
 You can customize the appearance of the clock by modifying the CSS styles in the styles.css file.
-Contributing
+## Contributing
 Contributions are welcome! If you'd like to contribute to this project, feel free to open a pull request.
